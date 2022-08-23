@@ -33,7 +33,7 @@ for i in range(len(boundaryPts)):
     if cost > maxCost or maxCost == -1:
         maxCost = cost
         maxCostIndex = i
-print("Minimum cost:", maxCost)
+print("Maximum cost:", maxCost)
 print("At x1 = ", boundaryPts[maxCostIndex][0], ", x2 = ", boundaryPts[maxCostIndex][1], sep="")
 plt.xlabel("x1 ->")
 plt.ylabel("x2 ->")
