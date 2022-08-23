@@ -34,7 +34,7 @@ for i in range(len(boundaryPts)):
         maxCost = cost
         maxCostIndex = i
 print("Minimum cost:", maxCost)
-print("At x = ", boundaryPts[maxCostIndex][0], ", y = ", boundaryPts[maxCostIndex][1], sep="")
-plt.xlabel("x ->")
-plt.ylabel("y ->")
+print("At x1 = ", boundaryPts[maxCostIndex][0], ", x2 = ", boundaryPts[maxCostIndex][1], sep="")
+plt.xlabel("x1 ->")
+plt.ylabel("x2 ->")
 plt.show()
