@@ -33,7 +33,7 @@ for i in range(len(boundaryPts)):
         minCost = cost
         minCostIndex = i
 print("Minimum cost:", minCost)
-print("At x1 = ", boundaryPts[minCostIndex][0], ", x2 = ", boundaryPts[minCostIndex][1], sep="")
-plt.xlabel("x1 ->")
-plt.ylabel("x2 ->")
+print("At x = ", boundaryPts[minCostIndex][0], ", y = ", boundaryPts[minCostIndex][1], sep="")
+plt.xlabel("x ->")
+plt.ylabel("y ->")
 plt.show()
