@@ -12,6 +12,7 @@ def nwcr(supply, demand, noOfPlants, noOfCenters, cost, allocation):
     totalCost = 0
     i = 0
     j = 0
+    noOfAllocations = 0
     while i < noOfPlants or j < noOfCenters:
         if supply[i] > demand[j]:
             allocation[i][j] = demand[j]
@@ -32,6 +33,11 @@ def nwcr(supply, demand, noOfPlants, noOfCenters, cost, allocation):
             totalCost += cost[i][j]*allocation[i][j]
             j += 1
             i += 1
+        noOfAllocations += 1
+    if noOfPlants+noOfCenters-1 == noOfAllocations:
+        print("\nnon-degeneracy condition is satisfied")
+    else:
+        print("\ndegeneracy condition is satisfied")
     return totalCost
 
 
